@@ -1,0 +1,254 @@
+/*===============tab + bang====================*/
+/**
+* Template Name: Bethany - v4.6.0
+* Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+/* định dạng thẻ div chưa các button tab */
+
+div.tab {
+    overflow: hidden;
+    background-color: white;
+    margin-left: 32%;
+    margin-bottom: 40px;
+   
+  }
+  
+  
+  /* định dạng các button tab */
+  
+  div.tab button {
+    background-color:white;
+    float: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 19px;
+    color: #0796fe;
+    font-weight: 600px;
+    border: 1.5px solid #0796fe;
+    
+  }
+  
+  
+  /* đổi màu khi một button tab được hover */
+  
+  
+  /* đổi màu nền cho tab đang được hiển thị nội dung */
+  
+  div.tab button.active {
+    background-color: #0796fe;
+    color: white;
+  }
+  
+  
+  /* định dạng nội dung hiển thị */
+  
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: 1px solid #ddd;
+    background-color: white;
+    color: #000;
+   
+    overflow: auto;
+    min-height: auto;
+  }
+  
+  .section-title :right {
+    margin-left: 50%;
+  }
+  
+  .section-title :left {
+    margin-right: 50%;
+  }
+  
+  .container-color {
+    display: flex;
+  }
+  
+  .block-color {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  /* ---------------------bang---------------*/
+  .content-table {
+    border-collapse: collapse;
+   
+    font-size: 0.9em;
+   margin-left: 0%;
+  
+  
+   
+   width: 100%;
+   
+    height: 100%;
+  
+    overflow: hidden;
+   
+    
+    
+  }
+  
+  .content-table thead tr {
+    background-color: #0796fe;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  
+  
+/*=======================design===========================*/  
+
+/* project design */
+.Design .collapsible {
+	background-color: #0796fe;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 1150px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+  }
+  
+ .Design .active, .collapsible:hover {
+	background-color: rgb(16, 39, 110);
+  }
+  
+ .Design .collapsible:after {
+	content: '\002B';
+	color: white;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+.Design	.active:after {
+	content: "\2212";
+  }
+  
+  .Design .content {
+	  width: 1149px;
+	padding: 0 15px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+  }
+
+/*==========================Implement=========================*/
+
+/*
+=====================================CSS TAB====================================
+*/
+
+.tabset>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+    display: none;
+}
+
+
+/*
+   Styling
+  */
+
+.tabset>label {
+  border: 1px solid #dddddd;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    
+    border-bottom: 0;
+    cursor: pointer;
+    font-size: 18px;
+    height: 60px;
+    width: 49%;
+    text-align: center;
+    background-color: #f3f3f3;
+    color: black;
+    border-radius: 2px;
+}
+
+.tabset>label:vertical,
+.tabset>input:focus+label {
+    color: white;
+    background-color: #0796fe;
+}
+
+.tabset>input:checked+label {
+    border-color: #ccc;
+   
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 30px 0;
+   
+    overflow: auto;
+    
+    min-height: 200px;
+    border-radius: 3px;
+    margin-bottom: 50px;
+}
+
+
+/*
+   Demo purposes only
+  */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.tabset {
+    max-width: auto;
+    margin-left: 0%;
+   
+}

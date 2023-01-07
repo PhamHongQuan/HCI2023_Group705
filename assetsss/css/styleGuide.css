@@ -1,0 +1,76 @@
+/* định dạng thẻ div chưa các button tab */
+
+div.tab {
+    overflow: hidden;
+    background-color: white;
+    margin-left: 17%;
+    margin-bottom: 40px;
+  }
+
+
+/* định dạng các button tab */
+
+div.tab button {
+    background-color:white;
+  
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: #049af7;
+    font-weight: 600px;
+    border: 1.5px solid#049af7;
+}
+
+
+/* đổi màu khi một button tab được hover */
+
+
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+
+div.tab button.active {
+    background-color:#049af7;
+    color: white;
+}
+
+
+/* định dạng nội dung hiển thị */
+
+.tabcontent {
+   
+    display: none;
+    padding: 6px 12px;
+    border-top: 1px solid #ddd;
+    background-color: white;
+    color: #000;
+    column-count: 2;
+    overflow: auto;
+    min-height: auto;
+  
+}
+
+.section-title :right {
+    margin-left: 50%;
+}
+
+.section-title :left {
+    margin-right: 50%;
+}
+
+.container-color {
+    display: flex;
+}
+
+.block-color {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
